@@ -1,4 +1,4 @@
-import toBool from "../src"
+import {toBool} from "../src"
 
 describe('toBool()', () => {
     it("value: 0 and except value: 0 should true", () => {
