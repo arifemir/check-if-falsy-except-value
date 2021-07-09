@@ -1,11 +1,19 @@
 {
-  "transform": {
-    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  "globals": {
+    "ts-jest": {
+      "tsconfigFile": "tsconfig.json"
+    }
   },
-  "testRegex": "./tests/.*",
-  "testEnvironment": "node",
   "moduleFileExtensions": [
     "ts",
     "js"
-  ]
+  ],
+  "coverageReporters": [
+    "json-summary",
+    "html"
+  ],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testEnvironment": "node"
 }
